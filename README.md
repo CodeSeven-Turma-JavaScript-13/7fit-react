@@ -3,7 +3,7 @@
 A 7FIT é uma plataforma social voltada para atividades físicas, onde usuários podem criar, descobrir e participar de eventos esportivos na sua comunidade. O foco é transformar conexões digitais em experiências reais através do esporte.
 
   <div align="center">
-  	<img src="https://ik.imagekit.io/Outwake/imagens/Code7/5468787.png" title="source: imagekit.io" width="100%"/>
+  	<img src="https://ik.imagekit.io/Outwake/imagens/Code7/5468787.png" title="source: imagekit.io" width="50%"/>
   </div>
 
 ## 🚀 Funcionalidades

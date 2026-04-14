@@ -25,12 +25,12 @@ A 7FIT é uma plataforma social voltada para atividades físicas, onde usuários
   </div>
 
 
-# 🛠️ Tecnologias Utilizadas
-React
-TypeScript
-Vite
-CSS / Tailwind 
-React Router DOM
+## 🛠️ Tecnologias Utilizadas
+- React
+- TypeScript
+- Vite
+- CSS / Tailwind 
+- React Router DOM
 
 
 # 📁 Estrutura de Pastas
@@ -101,8 +101,8 @@ A plataforma conecta pessoas com interesses em comum e incentiva uma vida mais a
 
 ## 🤝 Contribuição
 
-Sinta-se à vontade para contribuir com melhorias!
-Basta abrir uma issue ou enviar um pull request 🚀
+- Sinta-se à vontade para contribuir com melhorias!
+- Basta abrir uma issue ou enviar um pull request 🚀
 
 # 📄 Licença
 

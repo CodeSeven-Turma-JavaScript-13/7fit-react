@@ -1,73 +1,107 @@
-# React + TypeScript + Vite
+🏋️‍♀️ 7FIT - Eleve o seu jogo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A 7FIT é uma plataforma social voltada para atividades físicas, onde usuários podem criar, descobrir e participar de eventos esportivos na sua comunidade. O foco é transformar conexões digitais em experiências reais através do esporte.
 
-Currently, two official plugins are available:
+  <div align="center">
+  	<img src="https://ik.imagekit.io/Outwake/imagens/Code7/5468787.png" title="source: imagekit.io" width="100%"/>
+  </div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Funcionalidades
+🔎 Descoberta de eventos esportivos próximos
+👥 Criação e participação em eventos
+💬 Conexão entre jogadores e comunidades
+📊 Sistema de classificação e progresso
+📅 Gerenciamento de presença (RSVP)
+🖥️ Preview do Projeto
 
-## React Compiler
+📌 Home
+<div align="center">
+  	<img src="https://ik.imagekit.io/Outwake/imagens/Code7/Home.png" title="source: imagekit.io" width="100%"/>
+  </div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📌 Eventos
+<!-- INSERIR IMAGEM AQUI -->
+<div align="center">
+  	<img src="https://ik.imagekit.io/Outwake/imagens/Code7/Evento.png" title="source: imagekit.io" width="100%"/>
+  </div>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🛠️ Tecnologias Utilizadas
+React
+TypeScript
+Vite
+CSS / Tailwind 
+React Router DOM
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📁 Estrutura de Pastas
+7FIT-REACT/
+│
+├── public/
+│   ├── images/
+│   ├── favicon.svg
+│   └── icons.svg
+│
+├── src/
+│   ├── assets/
+│   │   ├── favicon.png
+│   │   ├── fitness_groups.png
+│   │   ├── hero.png
+│   │   └── reactsvg
+│   │
+│   ├── components/
+│   │   ├── footer/
+│   │   │   └── Footer.tsx
+│   │   └── navbar/
+│   │       └── Navbar.tsx
+│   │
+│   ├── pages/
+│   │   └── home/
+│   │       └── Home.tsx
+│   │
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⚙️ Como rodar o projeto
+# Clone o repositório
+git clone https://github.com/CodeSeven-Turma-JavaScript-13/7fit-react.git
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Acesse a pasta
+cd 7fit
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Instale as dependências
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Rode o projeto
+npm run dev
+
+O projeto estará disponível em:
+👉 http://localhost:5173/
+
+
+🎯 Objetivo
+
+O 7FIT foi criado para resolver um problema real:
+muitas pessoas querem praticar esportes, mas não têm com quem jogar ou não sabem onde encontrar eventos.
+
+A plataforma conecta pessoas com interesses em comum e incentiva uma vida mais ativa.
+
+📌 Próximos Passos
+ Integração com backend
+ Autenticação de usuários
+ Sistema de ranking avançado
+ Chat em tempo real
+ Deploy da aplicação
+🤝 Contribuição
+
+Sinta-se à vontade para contribuir com melhorias!
+Basta abrir uma issue ou enviar um pull request 🚀
+
+📄 Licença
+
+Este projeto está sob a licença MIT.

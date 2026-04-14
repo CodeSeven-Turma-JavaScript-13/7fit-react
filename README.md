@@ -1,4 +1,4 @@
-🏋️‍♀️ 7FIT - Eleve o seu jogo
+# 🏋️‍♀️ 7FIT - Eleve o seu jogo
 
 A 7FIT é uma plataforma social voltada para atividades físicas, onde usuários podem criar, descobrir e participar de eventos esportivos na sua comunidade. O foco é transformar conexões digitais em experiências reais através do esporte.
 
@@ -6,13 +6,12 @@ A 7FIT é uma plataforma social voltada para atividades físicas, onde usuários
   	<img src="https://ik.imagekit.io/Outwake/imagens/Code7/5468787.png" title="source: imagekit.io" width="100%"/>
   </div>
 
-🚀 Funcionalidades
-🔎 Descoberta de eventos esportivos próximos
-👥 Criação e participação em eventos
-💬 Conexão entre jogadores e comunidades
-📊 Sistema de classificação e progresso
-📅 Gerenciamento de presença (RSVP)
-🖥️ Preview do Projeto
+## 🚀 Funcionalidades
+
+✨ **Descobrir eventos:** encontre atividades esportivas próximas  
+🤝 **Conectar pessoas:** interaja com jogadores e comunidades  
+🏆 **Evoluir no ranking:** acompanhe seu progresso  
+📅 **Gerenciar presença:** confirme participação em eventos  
 
 📌 Home
 <div align="center">
@@ -26,7 +25,7 @@ A 7FIT é uma plataforma social voltada para atividades físicas, onde usuários
   </div>
 
 
-🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 React
 TypeScript
 Vite
@@ -34,7 +33,7 @@ CSS / Tailwind
 React Router DOM
 
 
-📁 Estrutura de Pastas
+# 📁 Estrutura de Pastas
 ```
 7FIT-REACT/
 │
@@ -69,41 +68,42 @@ React Router DOM
 └── vite.config.ts
 ```
 
-⚙️ Como rodar o projeto
-# Clone o repositório
+# 🔗Clone o repositório
 git clone https://github.com/CodeSeven-Turma-JavaScript-13/7fit-react.git
 
-# Acesse a pasta
+# 📁 Acesse a pasta
 cd 7fit
 
-# Instale as dependências
+# 📥 Instale as dependências
 npm install
 
-# Rode o projeto
+# 📀 Rode o projeto
 npm run dev
 
 O projeto estará disponível em:
 👉 http://localhost:5173/
 
 
-🎯 Objetivo
+# 🎯 Objetivo
 
 O 7FIT foi criado para resolver um problema real:
 muitas pessoas querem praticar esportes, mas não têm com quem jogar ou não sabem onde encontrar eventos.
 
 A plataforma conecta pessoas com interesses em comum e incentiva uma vida mais ativa.
 
-📌 Próximos Passos
- Integração com backend
- Autenticação de usuários
- Sistema de ranking avançado
- Chat em tempo real
- Deploy da aplicação
-🤝 Contribuição
+## 📌 Próximos Passos
+- Integração com backend
+- Autenticação de usuários
+- Sistema de ranking avançado
+- Chat em tempo real
+- Deploy da aplicação
+
+
+## 🤝 Contribuição
 
 Sinta-se à vontade para contribuir com melhorias!
 Basta abrir uma issue ou enviar um pull request 🚀
 
-📄 Licença
+# 📄 Licença
 
 Este projeto está sob a licença MIT.

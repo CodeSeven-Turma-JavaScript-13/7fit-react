@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const EVENTS = [
   {
     id: 1,
-    title: 'Domingo de manhã no futebol',
+    title: 'Domingo de manhã com futebol',
     sport: 'Futebol',
     icon: <SoccerBall size={24} weight="fill" className="text-neon" />,
     location: 'Barra da Tijuca, RJ',
@@ -15,7 +15,7 @@ const EVENTS = [
   },
   {
     id: 2,
-    title: 'Corrida de rua de basquete',
+    title: 'Competição de basquete',
     sport: 'Basquete',
     icon: <Basketball size={24} weight="fill" className="text-neon" />,
     location: 'Av. Atlântica, RJ',
@@ -40,7 +40,7 @@ const EVENTS = [
 function Home() {
   return (
     <div className="pb-24">
-      {/* Hero Section */}
+      {/* Seção Hero */}
       <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
@@ -48,8 +48,8 @@ function Home() {
             alt="Fitness background" 
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-dark via-dark/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-dark via-dark/20 to-transparent"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -65,10 +65,10 @@ function Home() {
             </div>
             <h1 className="text-6xl md:text-8xl font-black italic mb-6 leading-[0.9] tracking-tighter">
               ELEVE SEU JOGO. <br />
-              <span className="text-neon text-glow shadow-neon">ENCONTRE SEU TIME.</span>
+              <span className="text-neon text-glow">ENCONTRE SEU TIME.</span>
             </h1>
             <p className="text-lg md:text-xl text-text-sec mb-10 max-w-xl leading-relaxed">
-              O ponto de encontro definitivo para atletas. Descubra eventos esportivos locais, construa sua comunidade e transforme conexões digitais em glória esportiva real.
+              O ponto de encontro definitivo para atletas. Descubra eventos esportivos locais, construa sua comunidade e transforme conexões digitais em conquistas esportiva real.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-neon text-dark px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 glow-neon-hover group transition-all">
@@ -111,7 +111,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Discovery Feed Section */}
+      {/* Seção Feed */}
       <section className="py-24 relative overflow-hidden">
         <div className="bg-grid absolute inset-0 -z-10 opacity-30"></div>
         <div className="container mx-auto px-6">
@@ -132,7 +132,7 @@ function Home() {
                 whileHover={{ y: -10 }}
                 className="bg-surface border border-white/5 rounded-3xl overflow-hidden hover:border-neon/30 transition-all flex flex-col h-full"
               >
-                <div className="p-8 flex-grow">
+                <div className="p-8 grow">
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 bg-dark rounded-xl flex items-center justify-center border border-white/5">
                       {event.icon}
@@ -141,7 +141,7 @@ function Home() {
                       {event.difficulty}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-6 min-h-[64px]">{event.title}</h3>
+                  <h3 className="text-2xl font-bold mb-6 min-h-16">{event.title}</h3>
                   
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 text-text-sec">
@@ -163,7 +163,7 @@ function Home() {
                     </span>
                   </div>
                   <button className="text-sm font-black text-neon hover:text-white transition-colors">
-                    JOGAR
+                    PARTICIPAR
                   </button>
                 </div>
               </motion.div>
@@ -172,13 +172,13 @@ function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Seção chamada */}
       <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="bg-neon rounded-[3rem] p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12 group shadow-neon-strong">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 blur-[80px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
             <div className="relative z-10 text-dark">
-              <h2 className="text-5xl md:text-6xl font-black italic mb-6 leading-tight">PRONTO PARA JOGAR?</h2>
+              <h2 className="text-5xl md:text-6xl font-black italic mb-6 leading-tight">PRONTO PARA PARTICIPAR?</h2>
               <p className="text-lg font-bold opacity-80 uppercase tracking-widest">Conecte-se com jogadores, descubra clubes e comece sua jornada.</p>
             </div>
             <button className="relative z-10 bg-dark text-white px-12 py-6 rounded-2xl font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-2xl">

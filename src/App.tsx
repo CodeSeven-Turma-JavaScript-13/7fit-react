@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col relative overflow-x-hidden">
-        {/* Animated Background Elements */}
+        {/* Background Animado */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-neon/10 blur-[120px] rounded-full animate-pulse-slow"></div>
           <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-neon/5 blur-[100px] rounded-full"></div>
@@ -27,7 +27,8 @@ function App() {
         
         <NavBar />
         
-        <main className="flex-grow">
+        <main className="grow">
+          
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

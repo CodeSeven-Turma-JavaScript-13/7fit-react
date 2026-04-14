@@ -6,7 +6,7 @@ function Footer() {
     <footer className="bg-dark-lighter border-t border-white/5 pt-16 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          {/* Brand */}
+          {/* Marca */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6 group">
               <div className="w-8 h-8 bg-neon rounded flex items-center justify-center shadow-neon group-hover:rotate-12 transition-transform">
@@ -19,7 +19,7 @@ function Footer() {
             </p>
           </div>
 
-          {/* Links */}
+          {/* Links do site */}
           <div>
             <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Plataforma</h4>
             <ul className="space-y-4">
@@ -29,7 +29,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Social Media */}
           <div>
             <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Siga-nos</h4>
             <div className="flex gap-4">

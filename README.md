@@ -35,6 +35,7 @@ React Router DOM
 
 
 📁 Estrutura de Pastas
+```
 7FIT-REACT/
 │
 ├── public/
@@ -66,6 +67,7 @@ React Router DOM
 ├── package.json
 ├── tsconfig.json
 └── vite.config.ts
+```
 
 ⚙️ Como rodar o projeto
 # Clone o repositório

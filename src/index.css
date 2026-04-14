@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon: #b6ff00;
+  --color-dark: #0d0d0d;
+  --color-dark-lighter: #111111;
+  --color-surface: #1a1a1a;
+  --color-text-pri: #ffffff;
+  --color-text-sec: #b3b3b3;
+
+  --font-heading: "Outfit", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --shadow-neon: 0 0 15px rgba(182, 255, 0, 0.4);
+  --shadow-neon-strong: 0 0 25px rgba(182, 255, 0, 0.6);
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap');
+
+  :root {
+    background-color: var(--color-dark);
+    color: var(--color-text-pri);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply min-h-screen selection:bg-neon selection:text-dark;
+    background-image: 
+      radial-gradient(circle at 50% 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+    background-size: 100% 40px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply tracking-tight font-bold;
+  }
+}
+
+@layer utilities {
+  .glow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .glow-neon-hover {
+    @apply transition-all duration-300;
+  }
+  .glow-neon-hover:hover {
+    box-shadow: var(--shadow-neon-strong);
+    @apply border-neon;
+  }
+
+  .glass {
+    @apply backdrop-blur-xl border border-white/10;
+    background-color: rgba(13, 13, 13, 0.8);
+  }
+
+  .text-neon {
+    color: var(--color-neon);
+    text-shadow: 0 0 10px rgba(182, 255, 0, 0.3);
+  }
+
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+}

@@ -2,13 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
+import About from './pages/about/About';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col relative overflow-x-hidden">
-        {/* Animated Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-neon/10 blur-[120px] rounded-full animate-pulse-slow"></div>
           <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-neon/5 blur-[100px] rounded-full"></div>
@@ -30,6 +30,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/sobre" element={<About />} />
           </Routes>
         </main>
         

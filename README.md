@@ -82,6 +82,8 @@ npm run dev
 
 O projeto estará disponível em:
 👉 http://localhost:5173/
+Ou
+👉 https://7fit-react.vercel.app/
 
 
 # 🎯 Objetivo

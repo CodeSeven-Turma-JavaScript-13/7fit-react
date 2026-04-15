@@ -228,7 +228,7 @@ function Home() {
           <div className="bg-neon rounded-4xl md:rounded-[3rem] p-8 sm:p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 group shadow-neon-strong">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 blur-[80px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
             <div className="relative z-10 text-dark text-center md:text-left">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black italic mb-4 md:mb-6 leading-tight">PRONTO PARA JOGAR?</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black italic mb-4 md:mb-6 leading-tight">PRONTO PARA PARTICIPAR?</h2>
               <p className="text-sm md:text-lg font-bold opacity-80 uppercase tracking-widest">Conecte-se com jogadores, descubra clubes e comece sua jornada.</p>
             </div>
             <button

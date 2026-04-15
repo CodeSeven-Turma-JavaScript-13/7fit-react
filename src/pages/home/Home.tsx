@@ -1,4 +1,4 @@
-import { Trophy, Users, ArrowRight, SoccerBall, Basketball, TennisBall, MapPin, Clock } from '@phosphor-icons/react';
+import { CalendarIcon, SoccerBallIcon, BasketballIcon, UsersIcon, TrophyIcon, ArrowRightIcon, MapPinIcon, ClockIcon, TennisBallIcon } from '@phosphor-icons/react';
 import { motion } from 'framer-motion';
 
 const EVENTS = [
@@ -6,9 +6,10 @@ const EVENTS = [
     id: 1,
     title: 'Domingo de manhã com futebol',
     sport: 'Futebol',
-    icon: <SoccerBall size={24} weight="fill" className="text-neon" />,
+    icon: <SoccerBallIcon size={24} weight="fill" className="text-neon" />,
     location: 'Barra da Tijuca, RJ',
     time: '09:00 AM',
+    date:'20/05',
     members: 12,
     maxMembers: 16,
     difficulty: 'Intermediário',
@@ -17,9 +18,10 @@ const EVENTS = [
     id: 2,
     title: 'Competição de basquete',
     sport: 'Basquete',
-    icon: <Basketball size={24} weight="fill" className="text-neon" />,
+    icon: <BasketballIcon size={24} weight="fill" className="text-neon" />,
     location: 'Av. Atlântica, RJ',
     time: '06:30 PM',
+    date:'10/06',
     members: 8,
     maxMembers: 10,
     difficulty: 'Avançado',
@@ -28,9 +30,10 @@ const EVENTS = [
     id: 3,
     title: 'Duplas de tênis abertas',
     sport: 'Tênis',
-    icon: <TennisBall size={24} weight="fill" className="text-neon" />,
+    icon: <TennisBallIcon size={24} weight="fill" className="text-neon" />,
     location: 'Lagoa, RJ',
     time: '04:00 PM',
+    date:'16/04',
     members: 2,
     maxMembers: 4,
     difficulty: 'Iniciante',
@@ -72,7 +75,7 @@ function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-neon text-dark px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 glow-neon-hover group transition-all">
-                EXPLORE EVENTOS <ArrowRight size={24} weight="bold" className="group-hover:translate-x-1 transition-transform" />
+                EXPLORE EVENTOS <ArrowRightIcon size={24} weight="bold" className="group-hover:translate-x-1 transition-transform" />
               </button>
               <button className="glass px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-colors">
                 COMO FUNCIONA
@@ -82,27 +85,27 @@ function Home() {
         </div>
       </section>
 
-      {/* Stats/Features Section */}
+      {/* Seção de Eventos */}
       <section className="py-24 bg-dark relative">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="glass p-10 rounded-3xl border-l-4 border-l-neon relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
-                <SoccerBall size={120} />
+                <SoccerBallIcon size={120} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Descubra</h3>
               <p className="text-text-sec leading-relaxed">Encontre atividades esportivas acontecendo perto de você hoje. Varia de casual a competitivo.</p>
             </div>
             <div className="glass p-10 rounded-3xl border-l-4 border-l-neon relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
-                <Users size={120} />
+                <UsersIcon size={120} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Conecte-se</h3>
               <p className="text-text-sec leading-relaxed">Converse com seu time, gerencie RSVPs e construa sua rede esportiva local.</p>
             </div>
             <div className="glass p-10 rounded-3xl border-l-4 border-l-neon relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
-                <Trophy size={120} />
+                <TrophyIcon size={120} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Eleve seu nível</h3>
               <p className="text-text-sec leading-relaxed">Acompanhe suas conquistas, ganhe reputação e torne-se um líder comunitário.</p>
@@ -121,7 +124,7 @@ function Home() {
               <p className="text-text-sec uppercase tracking-[0.2em] font-bold text-sm">Junte-se a um jogo no seu bairro</p>
             </div>
             <button className="text-neon font-bold flex items-center gap-2 hover:underline">
-              VER TODOS OS EVENTOS <ArrowRight weight="bold" />
+              VER TODOS OS EVENTOS <ArrowRightIcon weight="bold" />
             </button>
           </div>
 
@@ -145,19 +148,23 @@ function Home() {
                   
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 text-text-sec">
-                      <MapPin size={20} className="text-neon" />
+                      <MapPinIcon size={20} className="text-neon" />
                       <span className="text-sm font-medium">{event.location}</span>
                     </div>
                     <div className="flex items-center gap-3 text-text-sec">
-                      <Clock size={20} className="text-neon" />
+                      <ClockIcon size={20} className="text-neon" />
                       <span className="text-sm font-medium">{event.time}</span>
+                    </div>
+                     <div className="flex items-center gap-3 text-text-sec">
+                      <CalendarIcon size={20} className="text-neon" />
+                      <span className="text-sm font-medium">{event.date}</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="px-8 py-6 bg-dark/50 border-t border-white/5 flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <Users size={18} className="text-text-sec" />
+                    <UsersIcon size={18} className="text-text-sec" />
                     <span className="text-sm font-bold">
                       {event.members}/{event.maxMembers} <span className="text-text-sec font-normal ml-1">Jogadores</span>
                     </span>
@@ -172,7 +179,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Seção chamada */}
+      {/* Seção Chamada */}
       <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="bg-neon rounded-[3rem] p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12 group shadow-neon-strong">
